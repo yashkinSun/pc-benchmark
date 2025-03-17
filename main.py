@@ -1,9 +1,11 @@
+# file: main.py
+
 import tkinter as tk
 from interface.main_gui import BenchmarkGUI
 
 def main():
     root = tk.Tk()
-    root.withdraw()  # Скрываем корневое окно, будем работать с Toplevel
+    root.withdraw()
     app = BenchmarkGUI(master=root)
     app.mainloop()
 
